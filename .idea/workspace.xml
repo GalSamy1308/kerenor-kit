@@ -4,38 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45ab50f-5c57-4955-be19-64d160d06e9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/fonts/Assistant-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Assistant-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Assistant-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Assistant-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Assistant-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Assistant-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Assistant-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/pngs/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/Alert triangle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/Bar chart-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/Help circle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/Menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/Moon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/Video.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/add.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SideBar/SideBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SideBar/buttonsData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/ColorMode.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/slices/ColorModeSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f45ab50f-5c57-4955-be19-64d160d06e9c" name="Changes" comment="updated README.md">
+      <change afterPath="$PROJECT_DIR$/src/Utils/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/HomeHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/NotificationButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enums/Pages.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useTheme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/slices/SelectedPageSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kerenor-kit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kerenor-kit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/Menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/Menu.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/Moon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/Moon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/Sun.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/Sun.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideBar/buttonsData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/buttonsData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,15 +30,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "GalSamy1308"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/GalSamy1308/kerenor-kit.git",
+    "accountId": "bd1a8496-b29e-43f1-a9fd-f009e97f7587"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -133,11 +130,24 @@
       <option name="presentableId" value="Default" />
       <updated>1752616979150</updated>
       <workItem from="1752616982797" duration="1489000" />
-      <workItem from="1752670541458" duration="8172000" />
+      <workItem from="1752670541458" duration="23362000" />
     </task>
+    <task id="LOCAL-00001" summary="updated README.md">
+      <option name="closed" value="true" />
+      <created>1752679106993</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752679106993</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated README.md" />
   </component>
 </project>

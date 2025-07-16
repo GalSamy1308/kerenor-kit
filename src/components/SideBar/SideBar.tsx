@@ -9,65 +9,65 @@ import {RootState} from "../../store";
 import {ColorModeState, toggleColorMode} from "../../store/slices/ColorModeSlice";
 import {useDispatch, useSelector} from "react-redux";
 import {ColorMode} from "../../enums/ColorMode";
+import useTheme, {themeType} from "../../hooks/useTheme";
+import {SelectedPageState, setSelectedPage} from "../../store/slices/SelectedPageSlice";
 
 
-const FloatingSidebar: React.FC = () => {
+const Sidebar: React.FC = () => {
     const {mode}: ColorModeState = useSelector((state: RootState) => state.ColorModeSlice);
+    const {page} : SelectedPageState = useSelector((state: RootState) => state.SelectedPageSlice);
+    const theme : themeType = useTheme()
     const dispatch = useDispatch();
     return (
         <Paper
             sx={{
-                position: 'fixed',
-                top: 24,
-                bottom: 24,
-                right: 24,
+                height: '90vh',
                 width: 430,
                 borderRadius: '15px',
                 overflow: 'auto',
-                backgroundColor: '#EFEFEF80',
-                paddingY: 2,
+                backgroundColor: theme.containerColor,
                 paddingX: 1,
             }}
         >
-            <Box display={'flex'} justifyContent={'center'} alignItems={'center'}>
+            <Box display={'flex'} justifyContent={'center'} alignItems={'center'}
+                 sx={{'& *' : {color: theme.textColor}}}
+
+            dir={'ltr'}>
                 <img src={logo} alt="Logo" width={98} height={98}/>
-                <Typography sx={{fontFamily: 'AssistantBold', color: 'black', fontSize: '40px'}}>KerenOrKit</Typography>
+                <Typography sx={{fontFamily: 'AssistantBold', fontSize: '40px'}}>KerenOrKit</Typography>
                 <IconButton sx={{ml: 1}}><MenuIcon/></IconButton>
                 <IconButton onClick={() => dispatch(toggleColorMode())}>
                     {mode === ColorMode.Light ? <Moon/> : <Sun/>}
                 </IconButton>
             </Box>
-            <Box sx={{
-                '& *': {
-                    color: '#373737',
-                    fontSize: '24px'
-                },
-                '& .MuiList': {
-                    '& *': {
-                        color: '#373737',
-                        fontSize: '24px'
-                    }
-                }
-            }}
+            <Box
                  dir={'rtl'}>
-                <Typography sx={{fontFamily: 'AssistantBold', m: 1}}>תפריט</Typography>
+                <Typography sx={{fontFamily: 'AssistantBold', m: 1, fontSize: '24px', color: theme.secondaryTextColor}}>תפריט</Typography>
                 <List>
                     {buttonsData.map((button) => (
 
-                        <ListItemButton key={button.text} sx={{borderRadius: '15px'}}>
+                        <ListItemButton key={button.text}
+                                        sx={{
+                                            borderRadius: '15px',
+                                            background : button.page === page ? theme.menuSelectedGradient : 'none',
+                                            '& *' : {
+                                            },
+                                        }}
+                                        onClick={() => dispatch(setSelectedPage(button.page))}>
                             <SvgIcon
                                 component={button.icon}
                                 inheritViewBox
                                 sx={{
                                     ml: 1,
+                                    fontSize: '24px',
                                     '& path': {
-                                        stroke: 'currentColor',
+                                        stroke: button.page === page ? '#ffffff' : theme.secondaryTextColor,
                                         fill: 'none',
                                     },
                                 }}
                             />
                             <Typography
-                                sx={{fontFamily: 'Assistant'}}
+                                sx={{fontFamily: 'Assistant', fontSize: '24px',color: button.page === page ? 'white' : theme.secondaryTextColor,}}
                             >{button.text}</Typography>
                         </ListItemButton>
                     ))}
@@ -77,4 +77,4 @@ const FloatingSidebar: React.FC = () => {
     );
 };
 
-export default FloatingSidebar;
+export default Sidebar;
