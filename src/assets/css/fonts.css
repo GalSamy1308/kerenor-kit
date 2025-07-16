@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Assistant';
+    src: url('../../../public/fonts/Assistant-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: url('../../../public/fonts/Assistant-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AssistantRegular';
+    src: url('../../../public/fonts/Assistant-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: url('../../../public/fonts/Assistant-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: url('../../../public/fonts/Assistant-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AssistantBold';
+    src: url('../../../public/fonts/Assistant-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: url('../../../public/fonts/Assistant-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
