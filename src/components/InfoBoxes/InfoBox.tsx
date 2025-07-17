@@ -5,7 +5,8 @@ import { ColorMode } from "../../enums/ColorMode";
 
 export type InfoBoxProps = {
     height?: string;
-    width: string;
+    width?: string;
+    margin?: string;
     backgroundColor: string;
     children: React.ReactNode;
 };
@@ -27,7 +28,7 @@ const InfoBox: React.FC<InfoBoxProps> = (props: InfoBoxProps) => {
             height={props.height}
             width={props.width}
             sx={{
-
+                minWidth: "200px",
                 overflow: 'auto',
                 background: props.backgroundColor,
                 borderRadius: "15px",

@@ -28,7 +28,7 @@ const HomeContent: React.FC<HomeContentProps> = (props: HomeContentProps) => {
     }
     return (
         <Box sx={{
-            flex : 1,
+            flex: 1,
             borderRadius: '15px',
             height: '840px',
             mt: 4,
@@ -39,26 +39,32 @@ const HomeContent: React.FC<HomeContentProps> = (props: HomeContentProps) => {
             p: 2,
             overflowY: 'auto',
         }}>
-            <Box sx={{height: '50%',backgroundColor : 'green', flex : 1, minHeight: 0}}>
-                <Typography sx={contentHeaders}>
+            <Box sx={{height: '50%',display: 'flex', flexDirection: 'column', p:2}}>
+                <Typography sx={{...contentHeaders}}>
                     נתונים
                 </Typography>
-                <Box sx={{display: 'flex', flexDirection: 'row', width: '100%', backgroundColor: 'yellow', flex : 1,  minHeight: 0, }}>
-                    <InfoBox height={"100%"} width={"30%"}
+                <Box sx={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    flex: 1,
+                    flexWrap: 'wrap',
+                }}>
+                    <InfoBox width={"30%"}
                              backgroundColor={props.theme.malfunctionsDocumentedGradient}>
                         <Typography sx={infoBoxesStats}>תקלות שתיעדת <br/> 42</Typography>
                     </InfoBox>
-                    <InfoBox height={"100%"} width={"30%"} backgroundColor={props.theme.receivedLikesGradient}>
+                    <InfoBox width={"30%"} backgroundColor={props.theme.receivedLikesGradient}>
                         <Typography sx={infoBoxesStats}>לייקים שהתקבלו <br/> 112</Typography>
 
                     </InfoBox>
-                    <InfoBox height={"100%"} width={"30%"} backgroundColor={props.theme.videosGradient}>
+                    <InfoBox width={"30%"} backgroundColor={props.theme.videosGradient}>
                         <Typography sx={infoBoxesStats}>סרטונים שנצפו <br/> 1</Typography>
                     </InfoBox>
                 </Box>
             </Box>
             <Box sx={{
-                backgroundColor: 'blue',
+                p:2,
                 height: '50%',
                 display: 'flex',
                 flexDirection: 'row',
@@ -74,17 +80,16 @@ const HomeContent: React.FC<HomeContentProps> = (props: HomeContentProps) => {
                     height: '100%',
                     flex: 1,
                     minHeight: 0,
-                    backgroundColor: 'red'
                 }}>
                     <Typography sx={contentHeaders}>
                         המשך לצפות
                     </Typography>
                 </Box>
-                <Box sx={{display: 'flex', flexDirection: 'column', width: '50%', height: '100%', flex: 1}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', width: '50%', flex: 1}}>
                     <Typography sx={contentHeaders}>
                         תיעוד אחרון במערכת
                     </Typography>
-                    <InfoBox height={'100%'} width={"100%"} backgroundColor={props.theme.secondaryContainerColor}>
+                    <InfoBox width={"100%"} backgroundColor={props.theme.secondaryContainerColor}>
                         <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
                             <Box sx={{p: 2, pb: 0}}>
                                 <Typography sx={{...infoBoxHeaders, color: props.theme.textColor}}>
