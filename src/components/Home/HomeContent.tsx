@@ -134,7 +134,7 @@ const HomeContent: React.FC<HomeContentProps> = (props: HomeContentProps) => {
                                 sx={{
                                     m: 1,
                                     fontSize: '32px !important', ' & path': {
-                                        stroke: 'props.theme.secondaryTextColor',
+                                        stroke: props.theme.secondaryTextColor,
                                         fill: 'none',
                                     }
                                 }}/>
