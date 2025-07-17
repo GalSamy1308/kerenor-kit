@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45ab50f-5c57-4955-be19-64d160d06e9c" name="Changes" comment="updated README.md">
-      <change afterPath="$PROJECT_DIR$/src/Utils/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/HomeHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/NotificationButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/Pages.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useTheme.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/slices/SelectedPageSlice.ts" afterDir="false" />
+    <list default="true" id="f45ab50f-5c57-4955-be19-64d160d06e9c" name="Changes" comment="started working on Home page, implemented a theme">
+      <change afterPath="$PROJECT_DIR$/src/components/Home/HomeContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InfoBoxes/InfoBox.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svg/Menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/Menu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svg/Moon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/Moon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svg/Sun.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/Sun.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeHeader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SideBar/buttonsData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/buttonsData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useTheme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useTheme.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,20 +28,28 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "GalSamy1308"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GalSamy1308&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/GalSamy1308/kerenor-kit.git",
-    "accountId": "bd1a8496-b29e-43f1-a9fd-f009e97f7587"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/GalSamy1308/kerenor-kit.git&quot;,
+    &quot;accountId&quot;: &quot;bd1a8496-b29e-43f1-a9fd-f009e97f7587&quot;
   }
-}]]></component>
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -59,32 +58,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/Projects/kerenor-kit/src/assets/pngs",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "ts.external.directory.path": "D:\\Projects\\kerenor-kit\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;ReactCreateComponentLastSelected&quot;: &quot;arrowFunctionComponent&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/kerenor-kit/src/assets/pngs&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Projects\\kerenor-kit\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
         <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
         <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
   </component>
@@ -117,8 +118,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
-        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
       </set>
     </attachedChunks>
   </component>
@@ -130,7 +131,10 @@
       <option name="presentableId" value="Default" />
       <updated>1752616979150</updated>
       <workItem from="1752616982797" duration="1489000" />
-      <workItem from="1752670541458" duration="23362000" />
+      <workItem from="1752670541458" duration="24300000" />
+      <workItem from="1752744127949" duration="118000" />
+      <workItem from="1752744417098" duration="4682000" />
+      <workItem from="1752751698162" duration="8840000" />
     </task>
     <task id="LOCAL-00001" summary="updated README.md">
       <option name="closed" value="true" />
@@ -140,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752679106993</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="started working on Home page, implemented a theme">
+      <option name="closed" value="true" />
+      <created>1752702361248</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752702361248</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +160,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated README.md" />
+    <MESSAGE value="started working on Home page, implemented a theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="started working on Home page, implemented a theme" />
   </component>
 </project>

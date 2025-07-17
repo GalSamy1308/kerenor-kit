@@ -3,6 +3,7 @@ import {RootState} from "../store";
 import {ColorModeState} from "../store/slices/ColorModeSlice";
 import {ColorMode} from "../enums/ColorMode";
 export type themeType ={
+    themeName: ColorMode;
     backgroundColor: string;
     textColor: string;
     secondaryTextColor: string;
@@ -22,7 +23,8 @@ export type themeType ={
 }
 const useTheme = () : themeType => {
     const {mode} : ColorModeState = useSelector((state: RootState) => state.ColorModeSlice);
-    const commonColors = {
+    const commonProperties = {
+        themeName: mode,
         actionButtonColor: '#E688EB',
         accentColor: '#7FC2F8',
         onCallGradient: 'radial-gradient(circle, #07EF59 0%, #57F895 100%)',
@@ -43,7 +45,7 @@ const useTheme = () : themeType => {
                 secondaryTextColor: '#373737',
                 containerColor: '#F8F8F8',
                 secondaryContainerColor: '#D9D9D9',
-                ...commonColors
+                ...commonProperties
             };
         case ColorMode.Dark:
             return {
@@ -52,7 +54,7 @@ const useTheme = () : themeType => {
                 secondaryTextColor: '#CECECE',
                 containerColor: '#1C1C1C',
                 secondaryContainerColor: '#6E6E6E',
-                ...commonColors
+                ...commonProperties
             };
         default:
             return {
@@ -61,7 +63,7 @@ const useTheme = () : themeType => {
                 secondaryTextColor: '#373737',
                 containerColor: '#EFEFEF80',
                 secondaryContainerColor: '#D9D9D9',
-                ...commonColors
+                ...commonProperties
             };
     }
 }

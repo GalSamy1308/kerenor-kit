@@ -24,7 +24,6 @@ const HomeHeader : React.FC<HomeHeaderProps> = (props: HomeHeaderProps) => {
     }
     return (
         <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', height: 170, backgroundColor: props.theme.containerColor, borderRadius: '15px', p:2}}>
-
         <Box sx={{textAlign: 'flex-end'}}>
             <Box sx={{display: 'flex', flexDirection: 'row'}}>
             <Typography sx={{...sharedWelcome, color: props.theme.textColor,}}>ברוך הבא,</Typography>
